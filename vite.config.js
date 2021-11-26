@@ -4,7 +4,7 @@ const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
     build: {
-        chunkSizeWarningLimit: 1000,
+        chunkSizeWarningLimit: 2000,
     }
   })
 
