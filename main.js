@@ -6,6 +6,7 @@ import * as THREE from 'three'
 //import OrbitControls class from the THREE JS library
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
+
 //PROJECT SETUP
 //1- Scene -- Container who holds all of your objects/cameras/lights
 const scene = new THREE.Scene()
@@ -51,7 +52,6 @@ const torus = new THREE.Mesh( geometry, material )
 torus.position.set(60, 0, 0)
 //Add the component to the scene
 //scene.add(torus)
-
 
 //LIGHTS SETUP
 
@@ -134,16 +134,16 @@ const createSun = (planeteImg, reliefImg, xCoord, yCoord, zCoord, xPosition, yPo
 }
 
 //PLANETS & SUN
-createSun('./planetes-img/sun-texture.jpeg', './planetes-img/jupiter-relief', 5, 32, 32, 0, 0, 0)
-createPlanete('./planetes-img/mercure-texture.jpg', './planetes-img/jupiter-relief', 1, 20, 20, 10, 0, 10)
-createPlanete('./planetes-img/venus-texture.jpg', './planetes-img/jupiter-relief', 1.5, 32, 32, 20, 0, 50)
-createPlanete('./planetes-img/earth-texture.jpg', './planetes-img/jupiter-relief', 2, 32, 32, -30, 0, 18)
-createPlanete('./planetes-img/mars-texture.jpeg', './planetes-img/jupiter-relief', 1.5, 32, 32, 40, 0, 5)
-createPlanete('./planetes-img/jupiter-texture.jpg', './planetes-img/jupiter-relief', 2.5, 32, 32, -50, 0, 3)
-createPlanete('./planetes-img/saturna-texture.jpg', './planetes-img/jupiter-relief', 5, 32, 32, 60, 0, 30)
-createPlanete('./planetes-img/uranus-texture.jpg', './planetes-img/jupiter-relief', 2, 32, 32, -70, 0, 4)
-//createPlanete('./planetes-img/neptune-texture.jpg', './planetes-img/jupiter-relief', 1.5, 32, 32, 80, 0, 60)
-//createPlanete('./planetes-img/pluton-texture.jpg', './planetes-img/jupiter-relief', 2, 32, 32, -90, 0, 0)
+createSun('./sun-texture.jpeg', './jupiter-relief', 5, 32, 32, 0, 0, 0)
+createPlanete('./mercure-texture.jpg', './jupiter-relief', 1, 20, 20, 10, 0, 10)
+createPlanete('./venus-texture.jpg', './jupiter-relief', 1.5, 32, 32, 20, 0, 50)
+createPlanete('./earth-texture.jpg', './jupiter-relief', 2, 32, 32, -30, 0, 18)
+createPlanete('./mars-texture.jpeg', './jupiter-relief', 1.5, 32, 32, 40, 0, 5)
+createPlanete('./jupiter-texture.jpg', './jupiter-relief', 2.5, 32, 32, -50, 0, 3)
+createPlanete('./saturna-texture.jpg', './jupiter-relief', 5, 32, 32, 60, 0, 30)
+createPlanete('./uranus-texture.jpg', './jupiter-relief', 2, 32, 32, -70, 0, 4)
+//createPlanete('./neptune-texture.jpg', './jupiter-relief', 1.5, 32, 32, 80, 0, 60)
+//createPlanete('./pluton-texture.jpg', './jupiter-relief', 2, 32, 32, -90, 0, 0)
 
 //Animate renderer animaete function for Torus Object
 function animate() {
